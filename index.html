@@ -3,27 +3,48 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=0.6">
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="style.css">
-	<script src="./dist/app.js" defer> </script>
-	<title>Document</title>
+	<title>GALAXIAN</title>
 </head>
 
 <body>
-	<!-- <div id="menu">
+	<div id="menu">
 		<div id="panel">
-			<h1 class="header"> GALAXIAN</h1>
-			<div class="score"></div>
-			<button class="btn brn-easy">Easy</button>
-			<button class="btn brn-medium">Medium</button>
-			<button class="btn brn-hard">Hard</button>
-			<button class="btn brn-hard">Score list</button>
+			<h1> GALAXIAN</h1>
+			<div class="score">Chose mode</div>
+			<div class="btn-row">
+				<button class="btn-easy"> Easy</button>
+				<button class="btn-medium">Medium</button>
+				<button class="btn-hard">Hard</button>
+			</div>
+			<button class="btn-score">Score list</button>
 		</div>
-	</div> -->
-	<canvas id="score-canvas" width="250px" height="100px"> </canvas>
-	<canvas id="canvas" width="1024px" height="800px"></canvas>
-	<canvas id="records-canvas" width="250px" height="200px"> </canvas>
+
+		<div id="score-table">
+			<button id='btn-close'><img src="pictures/close.svg" alt=""></button>
+			<div id="records">
+			</div>
+		</div>
+
+		<div id="record-name">
+			<h2>Congratulation, you beat a record.<br />Write your name</h2>
+			<input id="name-input">
+			<button id="btn-save">SAVE</button>
+		</div>
+	</div>
+
+
+
+	<div id="game">
+		<canvas id="score-canvas" width="250px" height="20px"> </canvas>
+		<canvas id="canvas" width="1024px" height="800px"></canvas>
+	</div>
+
+
+
+	<script src="app.js"> </script>
 </body>
 
 </html>
