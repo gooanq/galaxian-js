@@ -319,7 +319,7 @@ namespace Game {
 		Menu.style.display = 'block';
 		Menu.querySelector('.score').textContent = `Your score: ${score}`;
 
-		if(score < records[recordAmount-1].score){
+		if(score < records[recordAmount-1]?.score && records !== null){
 			return;
 		}
 
