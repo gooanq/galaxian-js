@@ -396,10 +396,11 @@ var Game;
         gameLoop();
     }
     function endGame(score) {
+        var _a;
         Game.style.display = 'none';
         Menu.style.display = 'block';
         Menu.querySelector('.score').textContent = "Your score: " + score;
-        if (score < records[recordAmount - 1].score) {
+        if (score < ((_a = records[recordAmount - 1]) === null || _a === void 0 ? void 0 : _a.score) && records !== null) {
             return;
         }
         document.getElementById('panel').style.display = 'none';
